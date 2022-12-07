@@ -1,0 +1,84 @@
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Filter And Search</title>
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+      />
+      <script src="https://kit.fontawesome.com/3134606c2b.js" crossorigin="anonymous"></script>
+      <!-- Stylesheet -->
+    <link rel="stylesheet" href="store.css" />
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="icon">
+          <h2 class="logo"><a href ="#"><img src ="logo.jpg" style="width:50px;height:50px;margin-top:15px"></a></h2>
+      </div>
+
+      <div class="menu">
+        <div class="btn-box">
+          <ul>
+              <button><li><a href="index.html">HOME</a></li></button>
+              <button><li><a href="Thejourney.html" style="white-space: nowrap;">THE JOURNEY</a></li></button>
+              <button><li><a href="team.html">TEAM</a></li></button>
+              <button><li><a href="store.html">STORE</a></li></button>
+              <button><li><a href="contact.html">CONTACT</a></li></button>
+          </ul>
+        </div>
+      </div>
+      <div class="tab_container_wrap">
+          
+      </div>
+  </div>
+    <div class="wrapper">
+      <div id="search-container">
+        <input
+          type="search"
+          id="search-input"
+          placeholder="Search product name here.."
+        />
+        <button id="search">Search</button>
+      </div>
+      <div id="buttons">
+        <button class="button-value" onclick="filterProduct('all')">All</button>
+        <button class="button-value" onclick="filterProduct('Royal')">
+          Royal
+        </button>
+        <button class="button-value" onclick="filterProduct('WnW')">
+          WnW
+        </button>
+        <button class="button-value" onclick="filterProduct('KSW')">
+          KSW
+        </button>
+        <button class="button-value" onclick="filterProduct('KSL')">
+          KSL
+        </button>
+      </div>
+      <div class="header">
+        <p class="logo">LOGO</p>
+        <div class="cart"><i class="fa-solid fa-cart-shopping"></i><p id="count">0</p></div>
+      </div>
+      <div class="container1">
+        <div id="root">
+          <div class="sidebar">
+            <div class="head"><p>Cart</p></div>
+            <!-- <div style="display: flex; flex-direction: row; gap: 2rem;">
+              <div id="cartItem">Your cart is empty</div>
+              <div id="itemPrice">0</div>
+            </div> -->
+            <div id="cartItem">Your cart is empty</div>
+            <div class="foot">
+              <h3>Total</h3>
+              <h2 id="total">Rs 0.00</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="products"></div>
+    </div>
+    <!-- Script -->
+    <script src="store.js"></script>
+  </body>
